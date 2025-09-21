@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0 20px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #021d35, #0a66c2);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero .logo {
+  width: 120px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Seções */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.alt-bg {
+  background: #eef3f8;
+}
+
+.solutions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+  max-width: 80px;
+  margin-bottom: 15px;
+}
+
+/* Botões */
+.btn-primary {
+  background: #25D366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1da851;
+}
+
+.centered-title {
+  text-align: center;
+}
+
+/* Prova social */
+.trust {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+/* WhatsApp Flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+.whatsapp-float:hover {
+  background: #daf2e3;
+}
+
+/* Footer */
+footer {
+  background: #021d35;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Seções alternadas */
+.alt-bg {
+  background: #eef3f8;
+}
+
+/* Lista de benefícios */
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.benefits li {
+  margin: 12px 0;
+  padding-left: 35px;
+  position: relative;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s, color 0.3s;
+  cursor: default;
+  transition: transform 0.3s;
+}
+
+.benefits li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.benefits li:hover {
+  color: #0a66c2; 
+  transform: translateX(5px);
+}
+
+.benefits li:hover::before {
+  transform: translateX(5px);
+}
