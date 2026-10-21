@@ -4,111 +4,200 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LinhaUm - Soluções de Tecnologia</title>
+  <meta name="description" content="LinhaUm: integrações entre sistemas, sites, aplicativos e automação de atendimento com WhatsApp.">
+  <meta name="theme-color" content="#020b18">
   <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.css">
   <link rel="stylesheet" href="style.css">
+  <script>
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js');
+  </script>
 </head>
 <body>
-  <!-- Hero -->
-  <header class="hero">
-    <div class="hero-content">
-      <img class="logo" src="img/logo.png" alt="Logo LinhaUm">
-      <h1>Soluções em Tecnologia e Automação</h1>
-      <p>Impulsionamos negócios com integrações, sites e aplicativos modernos.</p>
-      <a href="https://wa.me/5551981864006" target="_blank" class="btn-primary">🚀 Fale com a gente</a>
+
+  <!-- Navegação -->
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="#topo"><img src="img/logo.png" alt="">LinhaUm</a>
+      <a class="nav-cta" href="#contato">Contato</a>
     </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="topo">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="hero-content">
+      <div class="mark" aria-hidden="true"><span>&lt;</span><span>1</span><span>&gt;</span></div>
+      <div><span class="eyebrow">Software · Integrações · Automação</span></div>
+      <h1>Soluções em Tecnologia e <span class="accent">Automação</span></h1>
+      <p class="hero-sub">Impulsionamos negócios com integrações, sites e aplicativos modernos.</p>
+      <a href="https://wa.me/5551981864006" target="_blank" rel="noopener" class="btn btn-primary" data-magnet>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg>
+        <span class="btn-label">Fale com a gente</span>
+      </a>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"></div>
   </header>
 
-  <!-- Quem Somos -->
-  <section>
-    <h2>Quem Somos</h2>
-    <p>Somos uma empresa de software especializada em criar soluções tecnológicas que impulsionam negócios. 
-    Desenvolvemos produtos próprios e também criamos soluções personalizadas, integrando automações e sistemas que facilitam 
-    o dia a dia de nossos clientes.</p>
-  </section>
+  <main>
+    <!-- Quem Somos -->
+    <section class="section">
+      <div class="wrap">
+        <div class="kicker">Quem somos</div>
+        <p class="about-text" data-scroll-reveal>
+          Somos uma empresa de software especializada em criar soluções tecnológicas que impulsionam negócios.
+          Desenvolvemos produtos próprios e também criamos soluções personalizadas, integrando automações e
+          sistemas que facilitam o dia a dia de nossos clientes.
+        </p>
+      </div>
+    </section>
 
-  <!-- Integrações -->
-  <section class="alt-bg">
-    <h2>Soluções para Integrações</h2>
-    <p>Conectamos sistemas diferentes para que “conversem” entre si de forma automática e sem falhas.</p>
-    <div class="solutions">
-      <div class="card">
-        <img src="img/CNPJ.png" alt="Validação CNPJ">
-        <h3>API de Validação CNPJ Alfanumérico e CPF</h3>
-        <p><a href="apialfaecnpj.html" target="_blank">Saiba mais →</a></p>
-      </div>
-    </div>
-  </section>
+    <!-- Integrações -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Integrações</div>
+          <h2>Soluções para Integrações</h2>
+          <p>Conectamos sistemas diferentes para que “conversem” entre si de forma automática e sem falhas.</p>
+        </div>
 
-  <!-- Soluções Completas -->
-  <section>
-    <h2>Soluções Completas</h2>
-    <p>Sites e aplicativos prontos para o usuário final.</p>
-    <div class="solutions">
-      <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Delivery">
-        <h3>App de Delivery</h3>
-        <p>Aplicativos de delivery sob medida.</p>
-        <p>🚧 Em construção 🚧</p>
+        <article class="card feature" data-fade>
+          <div>
+            <span class="tag">API · Pronta para 2026</span>
+            <h3>API de Validação CNPJ Alfanumérico e CPF</h3>
+            <p>Valide CNPJs numéricos e no novo padrão alfanumérico, além de CPF, com uma integração simples.</p>
+            <a class="link-arrow" href="apialfaecnpj.html">Saiba mais <span>→</span></a>
+          </div>
+          <div class="feature-visual">
+            <img src="img/CNPJ.png" alt="Validação CNPJ">
+          </div>
+        </article>
       </div>
-      <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2331/2331941.png" alt="Orçamento">
-        <h3>App de Orçamento</h3>
-        <p>Geração de orçamentos digitais rápidos.</p>
-        <p>🚧 Em construção 🚧</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Agendamento">
-        <h3>App de Agendamento</h3>
-        <p>Facilidade para agendar horários no seu negócio.</p>
-        <p>🚧 Em construção 🚧</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Automação -->
-  <section class="alt-bg">
-    <h2>Automação de Atendimento</h2>
-    <p>Melhore a experiência dos seus clientes com chatbots e integração com WhatsApp.</p>
-    <div class="solutions">
-      <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Chatbot">
-        <h3>Chatbots Inteligentes</h3>
-        <p>Respostas automáticas e inteligentes 24/7.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-        <h3>Integração WhatsApp</h3>
-        <p>Atenda seus clientes no app que eles mais usam.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Soluções Completas -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Produtos</div>
+          <h2>Soluções Completas</h2>
+          <p>Sites e aplicativos prontos para o usuário final.</p>
+        </div>
 
-  <!-- Prova social -->
-  <section>
-    <h2 class="centered-title">Por que escolher a LinhaUm?</h2>
-    <div class="trust">
-      <div>+3 anos de experiência</div>
-      <div>Equipe especialista em integrações</div>
-      <div>Suporte ágil e humanizado</div>
-    </div>
-  </section>
+        <div class="grid" data-stagger>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div>
+            <h3>App de Delivery</h3>
+            <p>Aplicativos de delivery sob medida.</p>
+            <span class="badge">Em construção</span>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></div>
+            <h3>App de Orçamento</h3>
+            <p>Geração de orçamentos digitais rápidos.</p>
+            <span class="badge">Em construção</span>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M9 15l2 2 4-4"/></svg></div>
+            <h3>App de Agendamento</h3>
+            <p>Facilidade para agendar horários no seu negócio.</p>
+            <span class="badge">Em construção</span>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contato -->
-  <section id="contato" class="alt-bg">
-    <h2>Entre em contato</h2>
-    <p>Estamos prontos para ouvir sua ideia e transformá-la em realidade.</p>
-    <a href="https://wa.me/5551981864006" target="_blank" class="btn-primary">🚀 Fale com a gente</a>
-  </section>
+    <!-- Automação -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Atendimento</div>
+          <h2>Automação de Atendimento</h2>
+          <p>Melhore a experiência dos seus clientes com chatbots e integração com WhatsApp.</p>
+        </div>
+
+        <div class="grid" data-stagger>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 3v4"/><circle cx="9" cy="13" r="1.2" fill="currentColor"/><circle cx="15" cy="13" r="1.2" fill="currentColor"/><path d="M2 12v3M22 12v3"/></svg></div>
+            <h3>Chatbots Inteligentes</h3>
+            <p>Respostas automáticas e inteligentes 24/7.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 10.5c.5 1.8 1.7 3 3.5 3.5"/></svg></div>
+            <h3>Integração WhatsApp</h3>
+            <p>Atenda seus clientes no app que eles mais usam.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prova social -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Confiança</div>
+          <h2>Por que escolher a LinhaUm?</h2>
+        </div>
+
+        <div class="stats" data-stagger>
+          <div class="stat">
+            <span class="num">+<span data-count="3">3</span></span>
+            <p>anos de experiência</p>
+          </div>
+          <div class="stat">
+            <span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></span>
+            <p>Equipe especialista em integrações</p>
+          </div>
+          <div class="stat">
+            <span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg></span>
+            <p>Suporte ágil e humanizado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section cta">
+      <div class="wrap">
+        <div class="section-head" style="margin: 0 auto;">
+          <div class="kicker">Contato</div>
+          <h2>Entre em contato</h2>
+          <p>Estamos prontos para ouvir sua ideia e transformá-la em realidade.</p>
+        </div>
+        <div data-fade style="margin-top: 36px;">
+          <a href="https://wa.me/5551981864006" target="_blank" rel="noopener" class="btn btn-primary" data-magnet>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg>
+            <span class="btn-label">Fale com a gente</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Botão flutuante -->
-  <a href="https://wa.me/5551981864006" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  <a href="https://wa.me/5551981864006" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 10.5c.5 1.8 1.7 3 3.5 3.5"/></svg>
   </a>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 LinhaUm - Soluções em Tecnologia</p>
+    <div class="wrap">
+      <p>© <span id="year">2025</span> LinhaUm - Soluções em Tecnologia</p>
+      <p><a href="https://wa.me/5551981864006" target="_blank" rel="noopener">WhatsApp</a></p>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
